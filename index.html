@@ -1,1161 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Alpha and Omega Pro Services LLC | Remodeling, Painting & Flooring Demo</title>
-<meta name="description" content="Alpha and Omega Pro Services LLC — from start to finish, done right. Remodeling, painting, flooring installation, stairs, pressure washing, drywall repair and epoxy cleaning services. Call (425) 791-9975."/>
-<meta name="keywords" content="Alpha and Omega Pro Services LLC, remodeling, painting, flooring installation, stairs, pressure washing, drywall repair, epoxy cleaning services"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Alpha and Omega Pro Services LLC | From Start to Finish, Done Right"/>
-<meta property="og:description" content="Remodeling, painting, flooring installation, stairs, pressure washing, drywall repair and epoxy cleaning services. Call (425) 791-9975."/>
-<meta name="robots" content="index, follow"/>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Alpha and Omega Pro Services LLC",
-  "telephone": "+14257919975",
-  "email": "alphaomegaproservices@gmail.com",
-  "slogan": "From start to finish, done right",
-  "areaServed": {"@type": "AdministrativeArea","name": "Washington"},
-  "serviceType": [
-    "Remodeling",
-    "Painting",
-    "Flooring Installation",
-    "Stairs",
-    "Pressure Washing",
-    "Drywall Repair",
-    "Epoxy Cleaning Services"
-  ]
-}
-</script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&amp;family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&amp;display=swap" rel="stylesheet"/>
-
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{
-  --ink:#0a0a0a;--ink2:#111111;--steel:#1b1b1b;--slate:#252525;--slate2:#333333;
-  --king:#333333;--king2:#222222;
-  --sky:#d4a017;--sky-lt:#e0b84d;--sky-dk:#a67c00;--sky-xlt:#f1d37a;
-  --gold:#d4a017;--gold-lt:#e0b84d;--gold-dk:#a67c00;
-  --white:#ffffff;--warm:#f8f6f2;--off:#f0ede6;--light:#e2ddd5;--mid:#c8c0b0;
-  --text:#181c20;--muted:#52585e;--tr:.2s ease;
-  --r:10px;--r-sm:6px;--r-lg:14px;--r-xl:20px;
-}
-html{scroll-behavior:smooth;}
-body{font-family:'Barlow',sans-serif;background:var(--warm);color:var(--text);overflow-x:hidden;line-height:1.6;}
-a{text-decoration:none;color:inherit;}
-img{display:block;max-width:100%;}
-.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
-
-/* DEMO TAB */
-.demo-tab{position:fixed;top:72px;right:0;z-index:9999;background:#dc2626;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:.5rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px 5px 8px;border-radius:5px 0 0 5px;box-shadow:-2px 2px 10px rgba(220,38,38,.4);text-decoration:none;white-space:nowrap;}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:13px 28px;cursor:pointer;transition:all var(--tr);white-space:nowrap;border:none;text-decoration:none;border-radius:0 14px 0 14px;}
-.btn-sky{background:var(--sky);color:#fff;}
-.btn-sky:hover{background:var(--sky-lt);transform:translateY(-2px);box-shadow:0 8px 28px rgba(212,160,23,.5);}
-.btn-gold{background:var(--gold);color:#fff;}
-.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 8px 28px rgba(212,160,23,.5);}
-.btn-outline-w{background:transparent;border:2px solid rgba(255,255,255,.3);color:#fff;border-radius:14px 0 14px 0;}
-.btn-outline-w:hover{background:rgba(255,255,255,.09);}
-.btn-outline-sky{background:transparent;border:2px solid var(--sky);color:var(--sky);border-radius:14px 0 14px 0;}
-.btn-outline-sky:hover{background:var(--sky);color:#fff;}
-.btn-full{width:100%;justify-content:center;}
-.btn-lg{padding:17px 36px;font-size:.9rem;}
-
-/* ANNOUNCE */
-.announce{background:var(--sky-dk);padding:9px 20px;text-align:center;overflow:hidden;}
-.announce-desktop{font-family:'Barlow Condensed',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.52);}
-.announce-desktop span{color:var(--sky-xlt);}
-.announce-mobile{display:none;position:relative;height:1.3em;}
-.announce-mobile .tick{position:absolute;inset:0;font-family:'Barlow Condensed',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);opacity:0;transition:opacity .4s;text-align:center;}
-.announce-mobile .tick.active{opacity:1;}
-
-/* NAV */
-nav{position:sticky;top:0;z-index:200;background:var(--ink);border-bottom:3px solid var(--sky);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;padding:0 24px;max-width:1200px;margin:0 auto;}
-.nav-brand{display:flex;align-items:center;gap:12px;}
-.nav-logo-img{height:44px;width:auto;object-fit:contain;}
-.nav-brand-wrap{line-height:1.15;}
-.nav-brand-name{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.08em;color:#fff;}
-.nav-brand-sub{font-family:'Barlow Condensed',sans-serif;font-size:.4rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.25);}
-.nav-links{display:flex;gap:1.5rem;list-style:none;}
-.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.32);transition:color var(--tr);}
-.nav-links a:hover{color:var(--sky-xlt);}
-.nav-socials{display:flex;gap:10px;align-items:center;}
-.nav-social{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);transition:color var(--tr);}
-.nav-social:hover{color:var(--sky-lt);}
-.nav-right{display:flex;align-items:center;gap:10px;}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
-.hamburger span{display:block;width:22px;height:2px;background:rgba(255,255,255,.6);border-radius:2px;}
-.drawer{display:none;position:fixed;inset:0;background:var(--ink2);z-index:300;flex-direction:column;align-items:center;justify-content:center;gap:1.3rem;}
-.drawer.open{display:flex;}
-.drawer-close{position:absolute;top:20px;right:20px;background:none;border:none;font-size:2rem;cursor:pointer;color:rgba(255,255,255,.4);}
-.drawer a{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:.08em;color:rgba(255,255,255,.8);}
-.drawer a:hover{color:var(--sky-xlt);}
-.drawer-socials{display:flex;gap:16px;margin-top:8px;}
-.drawer-socials a{color:rgba(255,255,255,.4);font-size:1.1rem;}
-
-/* ===== HERO ===== */
-#hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--ink);}
-.hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(circle at center,rgba(255,255,255,.08),transparent 45%),linear-gradient(160deg,#050505 0%,#222222 100%);}
-.hero-bg img{width:100%;height:100%;object-fit:contain;object-position:center center;padding:6vw;opacity:.18;filter:brightness(1.2) contrast(1.1);}
-.hero-split{position:absolute;inset:0;z-index:1;}
-.hero-split::before{content:'';position:absolute;inset:0;background:linear-gradient(108deg,rgba(6,9,12,.97) 0%,rgba(6,9,12,.95) 40%,rgba(6,9,12,.6) 62%,transparent 100%);}
-.hero-split::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,var(--sky) 0%,var(--sky-lt) 60%,transparent 100%);}
-.hero-slash{position:absolute;top:0;right:0;bottom:0;width:55%;z-index:1;clip-path:polygon(20% 0,100% 0,100% 100%,0% 100%);background:linear-gradient(160deg,rgba(212,160,23,.08) 0%,transparent 60%);pointer-events:none;}
-.hero-grid-fx{position:absolute;inset:0;z-index:1;opacity:.022;background-image:linear-gradient(rgba(212,160,23,1) 1px,transparent 1px),linear-gradient(90deg,rgba(212,160,23,1) 1px,transparent 1px);background-size:56px 56px;pointer-events:none;}
-.hero-glow{position:absolute;z-index:1;width:900px;height:700px;left:-100px;bottom:-100px;background:radial-gradient(ellipse,rgba(212,160,23,.08) 0%,transparent 65%);pointer-events:none;}
-.hero-glow2{position:absolute;z-index:1;width:500px;height:400px;right:5%;top:10%;background:radial-gradient(ellipse,rgba(224,184,77,.08) 0%,transparent 65%);pointer-events:none;}
-.hero-crown{position:absolute;top:24px;right:32px;z-index:5;width:70px;height:70px;background:linear-gradient(135deg,var(--gold-dk),var(--gold));border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px rgba(212,160,23,.25),0 12px 40px rgba(212,160,23,.35);animation:crownPulse 3s ease-in-out infinite;font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.08em;color:#fff;}
-@keyframes crownPulse{0%,100%{box-shadow:0 0 0 3px rgba(212,160,23,.25),0 12px 40px rgba(212,160,23,.35);}50%{box-shadow:0 0 0 8px rgba(212,160,23,.1),0 16px 50px rgba(212,160,23,.5);}}
-
-.hero-inner{position:relative;z-index:4;width:100%;padding:110px 24px 72px;max-width:1200px;margin:0 auto;}
-.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:52px;align-items:center;}
-
-.hero-kicker{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.hero-kicker-line{width:40px;height:3px;background:linear-gradient(to right,var(--sky),var(--sky-lt));border-radius:2px;}
-.hero-kicker span{font-family:'Barlow Condensed',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--sky-xlt);}
-
-.hero-title{font-family:'Bebas Neue',sans-serif;line-height:.85;letter-spacing:.02em;font-size:clamp(4rem,9vw,10rem);color:#fff;margin-bottom:14px;position:relative;}
-.hero-title .line1{display:block;font-size:.6em;letter-spacing:.15em;color:rgba(255,255,255,.55);}
-.hero-title .king{color:var(--sky-xlt);position:relative;display:inline-block;}
-.hero-title .king::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:3px;background:linear-gradient(to right,var(--sky),var(--sky-lt));border-radius:2px;}
-.hero-title .roofing{display:block;}
-
-.hero-sub{font-size:.97rem;font-weight:300;color:rgba(255,255,255,.5);max-width:480px;line-height:1.9;margin-bottom:28px;}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;}
-
-.htbar{display:flex;align-items:center;gap:14px;padding:13px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--sky);flex-wrap:wrap;border-radius:0 var(--r-sm) var(--r-sm) 0;}
-.htbar-item{display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.06em;color:rgba(255,255,255,.38);white-space:nowrap;}
-.htbar-div{width:1px;height:12px;background:rgba(255,255,255,.1);}
-
-/* HERO CARD */
-.hqcard{background:var(--ink2);border-top:4px solid var(--sky);border-radius:var(--r-xl);overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.8),0 0 0 1px rgba(212,160,23,.14);}
-.hqcard-head{background:linear-gradient(135deg,var(--sky-dk),var(--sky));padding:22px 24px;}
-.hqcard-head h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.08em;color:#fff;}
-.hqcard-head p{font-size:.7rem;color:rgba(255,255,255,.5);margin-top:3px;}
-.hqcard-body{padding:22px 24px;}
-.fg{display:flex;flex-direction:column;gap:4px;margin-bottom:10px;}
-.fg label{font-family:'Barlow Condensed',sans-serif;font-size:.52rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.2);}
-.fg input,.fg select,.fg textarea{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);padding:10px 13px;color:#fff;font-family:'Barlow',sans-serif;font-size:.86rem;width:100%;outline:none;-webkit-appearance:none;appearance:none;transition:border-color var(--tr);border-radius:var(--r-sm);}
-.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.15);}
-.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--sky-lt);}
-.fg select option{background:#080c10;color:#fff;}
-.fg textarea{resize:none;min-height:72px;}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
-.hqcard-note{text-align:center;margin-top:8px;font-size:.58rem;color:rgba(255,255,255,.13);}
-.success-msg{display:none;margin-top:8px;font-family:'Barlow Condensed',sans-serif;font-size:.74rem;font-weight:700;color:var(--sky-xlt);letter-spacing:.04em;text-align:center;}
-
-/* MARQUEE */
-.marquee-wrap{background:linear-gradient(to right,var(--sky-dk),var(--king),var(--sky-dk));overflow:hidden;padding:11px 0;}
-.marquee-track{display:flex;width:max-content;animation:marquee 46s linear infinite;}
-@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-.marquee-item{display:inline-flex;align-items:center;gap:14px;padding:0 22px;white-space:nowrap;}
-.marquee-text{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.22em;color:rgba(255,255,255,.5);}
-.mbl{color:rgba(212,160,23,.6);}
-
-/* TRUST */
-.trust-strip{background:var(--steel);padding:22px 0;border-bottom:1px solid rgba(255,255,255,.04);}
-.trust-inner{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;}
-.t-item{display:flex;align-items:center;gap:9px;}
-.t-icon{width:32px;height:32px;background:rgba(212,160,23,.12);display:flex;align-items:center;justify-content:center;color:var(--sky-lt);flex-shrink:0;border-radius:8px;}
-.t-text{font-family:'Barlow Condensed',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.36);}
-.t-div{width:1px;height:20px;background:rgba(255,255,255,.08);}
-
-/* SECTIONS */
-.sec{padding:96px 0;}
-.sec-warm{background:var(--warm);}
-.sec-off{background:var(--off);}
-.sec-dark{background:var(--ink);}
-.sec-steel{background:var(--steel);}
-.sec-king{background:var(--king2);}
-.section-head{text-align:center;margin-bottom:56px;}
-.lbl{font-family:'Barlow Condensed',sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--sky-dk);display:block;margin-bottom:10px;}
-.lbl-w{color:var(--sky-xlt);}
-.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,5vw,5.5rem);line-height:.88;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);}
-.sec-title .sk{color:var(--sky);}
-.sec-title .gd{color:var(--gold-dk);}
-.sec-title-w{color:#fff;}
-.sec-sub{font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.84;max-width:560px;margin:14px auto 0;}
-
-/* ===== ABOUT STRIP ===== */
-.about-strip{background:var(--slate);padding:64px 0;}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-.about-img-wrap{position:relative;}
-.about-img-frame{border-radius:var(--r-xl);overflow:hidden;position:relative;background:#fff;}
-.about-img-frame img{width:100%;height:520px;object-fit:contain;padding:34px;background:#fff;}
-.about-img-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--sky),var(--sky-lt));z-index:2;}
-.about-img-frame::after{content:'';position:absolute;bottom:0;right:0;width:4px;height:60%;background:linear-gradient(to top,var(--gold),transparent);z-index:2;}
-.about-badge-wrap{position:absolute;bottom:-18px;right:-18px;z-index:3;display:flex;flex-direction:column;gap:8px;}
-.about-badge{background:var(--sky-dk);color:#fff;padding:16px 18px;text-align:center;border-radius:var(--r-lg);border:2px solid rgba(212,160,23,.3);}
-.about-badge span{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;line-height:1;display:block;}
-.about-badge small{font-family:'Barlow Condensed',sans-serif;font-size:.44rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.7;display:block;margin-top:2px;}
-.about-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5vw,5rem);line-height:.88;letter-spacing:.03em;text-transform:uppercase;color:#fff;margin-bottom:18px;}
-.about-title .sk{color:var(--sky-xlt);}
-.about-body{font-size:.95rem;font-weight:300;color:rgba(255,255,255,.48);line-height:1.88;margin-bottom:14px;}
-.pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px;}
-.pill{font-family:'Barlow Condensed',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border:1.5px solid rgba(255,255,255,.14);color:rgba(255,255,255,.4);transition:all var(--tr);border-radius:var(--r-sm);}
-.pill:hover{border-color:var(--sky-dk);color:var(--sky-lt);}
-.stats-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);margin:22px 0;}
-.stat{text-align:center;padding:18px 8px;border-right:1px solid rgba(255,255,255,.07);}
-.stat:last-child{border-right:none;}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--sky-lt);line-height:1;display:block;}
-.stat-lbl{font-family:'Barlow Condensed',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:4px;}
-
-/* ===== SERVICES ===== */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-.svc-card{position:relative;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--ink);border-radius:var(--r-lg);}
-.svc-card.featured{grid-column:span 3;min-height:420px;}
-.svc-img{position:absolute;inset:0;background-size:contain;background-position:center;background-repeat:no-repeat;background-color:#0b1015;transition:transform .8s cubic-bezier(.25,.46,.45,.94);}
-.svc-card:hover .svc-img{transform:scale(1.08);}
-.svc-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,9,12,.98) 0%,rgba(6,9,12,.55) 50%,rgba(6,9,12,.2) 100%);}
-.svc-tag{position:absolute;top:14px;left:14px;z-index:3;background:var(--sky-dk);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:.5rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;padding:5px 11px;border-radius:0 14px 0 14px;}
-.svc-content{position:relative;z-index:2;padding:22px;}
-.svc-num{font-family:'Bebas Neue',sans-serif;font-size:.64rem;letter-spacing:.3em;color:var(--sky-xlt);margin-bottom:3px;opacity:.28;}
-.svc-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;text-transform:uppercase;color:#fff;margin-bottom:6px;}
-.svc-card.featured .svc-name{font-size:2.9rem;}
-.svc-desc{font-size:.8rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.65;margin-bottom:10px;}
-.svc-link{display:inline-flex;align-items:center;gap:6px;font-family:'Barlow Condensed',sans-serif;font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--sky-xlt);background:none;border:none;padding:0;cursor:pointer;}
-
-/* ===== PROJECTS — FILTERABLE MASONRY ===== */
-.filter-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:36px;}
-.filter-btn{font-family:'Barlow Condensed',sans-serif;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:9px 20px;cursor:pointer;transition:all var(--tr);border-radius:0 12px 0 12px;border:2px solid rgba(255,255,255,.12);background:transparent;color:rgba(255,255,255,.4);}
-.filter-btn:hover,.filter-btn.active{background:var(--sky);border-color:var(--sky);color:#fff;box-shadow:0 6px 20px rgba(212,160,23,.4);}
-.proj-grid{columns:3;gap:14px;column-fill:balance;}
-.proj-tile{break-inside:avoid;margin-bottom:14px;border-radius:var(--r-lg);overflow:hidden;position:relative;cursor:pointer;background:#fff;}
-.proj-tile img{width:100%;display:block;transition:transform .6s cubic-bezier(.25,.46,.45,.94),filter .4s ease;background:#fff;padding:18px;object-fit:contain;min-height:230px;}
-.proj-tile:hover img{transform:scale(1.07);}
-.proj-tile-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,9,12,.85),transparent 50%);opacity:0;transition:opacity .3s ease;}
-.proj-tile:hover .proj-tile-ov{opacity:1;}
-.proj-tile-label{position:absolute;bottom:0;left:0;right:0;padding:18px 14px 14px;font-family:'Barlow Condensed',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);transform:translateY(8px);opacity:0;transition:all .3s ease;}
-.proj-tile:hover .proj-tile-label{transform:translateY(0);opacity:1;}
-
-/* LIGHTBOX */
-.lightbox{display:none;position:fixed;inset:0;background:rgba(6,9,12,.95);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out;}
-.lightbox.open{display:flex;}
-.lightbox img{max-width:90vw;max-height:88vh;object-fit:contain;border-radius:var(--r-lg);box-shadow:0 0 80px rgba(212,160,23,.2);background:#fff;padding:24px;}
-.lightbox-close{position:absolute;top:20px;right:20px;background:none;border:none;color:rgba(255,255,255,.5);font-size:2.2rem;cursor:pointer;}
-
-/* ===== VALUES GRID ===== */
-.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-.value-card{background:var(--slate2);padding:26px 20px;border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.05);transition:all var(--tr);text-align:center;}
-.value-card:hover{transform:translateY(-5px);border-color:rgba(212,160,23,.2);box-shadow:0 16px 40px rgba(0,0,0,.5);}
-.value-card-icon{width:48px;height:48px;background:rgba(212,160,23,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--sky-lt);margin:0 auto 14px;transition:background var(--tr);}
-.value-card:hover .value-card-icon{background:rgba(212,160,23,.2);}
-.value-card-title{font-family:'Barlow Condensed',sans-serif;font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#fff;margin-bottom:8px;}
-.value-card-body{font-size:.78rem;font-weight:300;color:rgba(255,255,255,.36);line-height:1.66;}
-
-/* ===== PROCESS ===== */
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto;}
-.process-step{position:relative;text-align:center;padding:36px 24px;}
-.process-step::after{content:'→';position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:rgba(212,160,23,.25);display:block;}
-.process-step:last-child::after{display:none;}
-.step-circle{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--sky-dk),var(--sky));display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:#fff;box-shadow:0 8px 30px rgba(212,160,23,.35);}
-.step-title{font-family:'Barlow Condensed',sans-serif;font-size:.94rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#fff;margin-bottom:8px;}
-.step-desc{font-size:.82rem;font-weight:300;color:rgba(255,255,255,.4);line-height:1.65;}
-
-/* ===== FAQ ===== */
-.faq-wrap{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:9px;}
-.faq-item{background:#fff;border:1.5px solid var(--mid);border-radius:var(--r-lg);overflow:hidden;transition:border-color var(--tr);}
-.faq-item.open{border-color:var(--sky-dk);}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;}
-.faq-q-text{font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);}
-.faq-icon{width:28px;height:28px;background:var(--off);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--muted);transition:all var(--tr);font-size:1.1rem;line-height:1;}
-.faq-item.open .faq-icon{background:var(--sky-dk);color:#fff;transform:rotate(45deg);}
-.faq-a{display:none;padding:0 22px 20px;font-size:.9rem;font-weight:300;color:var(--muted);line-height:1.82;}
-.faq-item.open .faq-a{display:block;}
-
-/* ===== AREAS ===== */
-.areas-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;}
-.area-tag{background:#fff;border:1.5px solid var(--mid);padding:10px 13px;border-radius:var(--r-sm);font-family:'Barlow Condensed',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center;transition:all var(--tr);}
-.area-tag:hover{border-color:var(--sky-dk);color:var(--sky-dk);background:rgba(212,160,23,.08);}
-
-/* ===== CONTACT ===== */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
-.contact-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5vw,5rem);line-height:.88;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin-bottom:18px;}
-.contact-title .sk{color:var(--sky);}
-.contact-body{font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.86;margin-bottom:26px;font-style:italic;}
-.ci{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
-.ci-row{display:flex;align-items:center;gap:13px;padding:14px 18px;background:#fff;border:1.5px solid var(--mid);border-left:4px solid var(--sky);border-radius:var(--r-sm);}
-.ci-icon{width:32px;height:32px;background:rgba(212,160,23,.08);display:flex;align-items:center;justify-content:center;color:var(--sky-dk);flex-shrink:0;border-radius:8px;}
-.ci-lbl{font-family:'Barlow Condensed',sans-serif;font-size:.5rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sky-dk);margin-bottom:1px;}
-.ci-val{font-size:.88rem;color:var(--ink);font-weight:600;}
-.cform{background:#fff;border-top:4px solid var(--sky);box-shadow:0 8px 40px rgba(0,0,0,.1);border-radius:var(--r-xl);overflow:hidden;}
-.cform-head{background:linear-gradient(135deg,var(--sky-dk),var(--sky));padding:22px 26px;}
-.cform-head h3{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.08em;color:#fff;}
-.cform-head p{font-size:.7rem;color:rgba(255,255,255,.5);margin-top:3px;}
-.cform-body{padding:24px 26px;}
-.est-fg{display:flex;flex-direction:column;gap:4px;margin-bottom:10px;}
-.est-fg label{font-family:'Barlow Condensed',sans-serif;font-size:.5rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
-.est-fg input,.est-fg select,.est-fg textarea{background:var(--off);border:1.5px solid var(--mid);padding:11px 14px;color:var(--ink);font-family:'Barlow',sans-serif;font-size:.88rem;width:100%;outline:none;-webkit-appearance:none;appearance:none;transition:border-color var(--tr);border-radius:var(--r-sm);}
-.est-fg input:focus,.est-fg select:focus,.est-fg textarea:focus{border-color:var(--sky-dk);}
-.est-fg textarea{resize:none;min-height:88px;}
-.form-note{text-align:center;margin-top:8px;font-size:.58rem;color:var(--muted);}
-
-/* FOOTER CTA */
-.footer-cta{background:var(--king2);padding:28px 0;border-top:4px solid var(--sky);}
-.footer-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
-.footer-cta-txt h4{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em;}
-.footer-cta-txt p{font-size:.8rem;color:rgba(255,255,255,.28);}
-.footer-cta-btns{display:flex;gap:10px;flex-wrap:wrap;}
-
-/* FOOTER */
-footer{background:var(--ink);}
-.footer-main{padding:56px 0 32px;}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;}
-.footer-brand-name{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.08em;color:#fff;margin-bottom:3px;}
-.footer-brand-sub{font-family:'Barlow Condensed',sans-serif;font-size:.46rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sky-xlt);margin-bottom:14px;}
-.footer-desc{font-size:.8rem;color:rgba(255,255,255,.2);line-height:1.86;max-width:250px;margin-bottom:14px;}
-.footer-col-title{font-family:'Barlow Condensed',sans-serif;font-size:.54rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--sky-xlt);margin-bottom:14px;}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:9px;}
-.footer-links a{font-size:.8rem;color:rgba(255,255,255,.22);cursor:pointer;transition:color var(--tr);}
-.footer-links a:hover{color:rgba(125,211,252,.7);}
-.footer-socials{display:flex;gap:10px;margin-top:12px;}
-.footer-social{width:34px;height:34px;background:rgba(212,160,23,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);transition:all var(--tr);}
-.footer-social:hover{background:rgba(212,160,23,.25);color:var(--sky-lt);}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:20px 0;border-top:1px solid rgba(255,255,255,.05);}
-.footer-copy{font-size:.7rem;color:rgba(255,255,255,.12);}
-.footer-dev{font-family:'Barlow Condensed',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.12);}
-.footer-dev a{color:rgba(255,255,255,.22);}
-.footer-dev a:hover{color:var(--sky-xlt);}
-
-/* FLOAT CTA */
-.float-cta{position:fixed;bottom:24px;right:24px;z-index:500;display:none;flex-direction:column;align-items:flex-end;gap:10px;}
-.float-cta.vis{display:flex;}
-@keyframes ring-pulse{0%{transform:scale(1);opacity:.7;}70%{transform:scale(1.55);opacity:0;}100%{transform:scale(1.55);opacity:0;}}
-.float-bubble{background:#fff;color:var(--ink);font-family:'Barlow',sans-serif;font-size:.82rem;font-weight:500;padding:10px 16px;border-radius:16px 16px 4px 16px;box-shadow:0 6px 28px rgba(0,0,0,.18);white-space:nowrap;position:relative;}
-.float-bubble::after{content:'';position:absolute;bottom:-8px;right:18px;border:5px solid transparent;border-top-color:#fff;border-bottom:none;}
-.float-bubble .bubble-dot{display:inline-block;width:7px;height:7px;background:#22c55e;border-radius:50%;margin-right:7px;position:relative;}
-.float-bubble .bubble-dot::before{content:'';position:absolute;inset:-3px;background:#22c55e;border-radius:50%;animation:ring-pulse 1.6s ease-out infinite;}
-.float-btn-wrap{position:relative;display:inline-flex;}
-.float-btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--sky-dk),var(--sky));color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:14px 22px;border-radius:0 14px 0 14px;border:none;cursor:pointer;text-decoration:none;box-shadow:0 6px 24px rgba(212,160,23,.5);transition:transform .2s,box-shadow .2s;}
-.float-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(212,160,23,.7);}
-.float-dismiss{display:none;position:absolute;top:-8px;right:-8px;width:20px;height:20px;background:var(--ink);border-radius:50%;border:2px solid var(--sky);cursor:pointer;font-size:.7rem;color:rgba(255,255,255,.7);align-items:center;justify-content:center;}
-.float-cta.vis .float-dismiss{display:flex;}
-
-/* REVEAL */
-.reveal{opacity:1;transform:none;transition:opacity .62s ease,transform .62s ease;}
-.js-loaded .reveal{opacity:0;transform:translateY(22px);}
-.js-loaded .reveal.in{opacity:1;transform:none;}
-
-/* SVC LIST */
-.svc-list-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.svc-list-item{display:flex;align-items:center;gap:12px;padding:13px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:var(--r-sm);transition:all var(--tr);}
-.svc-list-item:hover{background:rgba(255,255,255,.07);border-color:rgba(212,160,23,.2);transform:translateX(4px);}
-.svc-list-icon{width:32px;height:32px;background:rgba(212,160,23,.12);display:flex;align-items:center;justify-content:center;color:var(--sky-lt);flex-shrink:0;border-radius:7px;}
-.svc-list-name{font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.62);}
-
-/* RESPONSIVE */
-@media(max-width:1100px){
-.values-grid{grid-template-columns:repeat(2,1fr);}
-.footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
-.footer-grid>*:first-child{grid-column:1/-1;}
-}
-@media(max-width:1024px){
-.hero-grid{grid-template-columns:1fr;gap:36px;}
-.svc-grid{grid-template-columns:1fr 1fr;}
-.svc-card.featured{grid-column:span 2;}
-.about-grid{grid-template-columns:1fr;gap:48px;}
-.contact-grid{grid-template-columns:1fr;gap:48px;}
-.proj-grid{columns:2;}
-.areas-grid{grid-template-columns:repeat(4,1fr);}
-.svc-list-grid{grid-template-columns:1fr;}
-.process-grid{grid-template-columns:1fr;}
-.process-step::after{display:none;}
-}
-@media(max-width:768px){
-.announce-mobile{display:block !important;}
-.announce-desktop{display:none;}
-.nav-links,.nav-socials,.nav-right .btn:first-of-type{display:none;}
-.hamburger{display:flex;}
-.sec{padding:60px 0;}
-.container{padding:0 18px;}
-.hero-inner{padding:96px 18px 56px;}
-.hero-btns{flex-direction:column;}
-.hero-btns .btn{width:100%;justify-content:center;}
-.htbar{flex-direction:column;gap:7px;padding:13px 18px;}
-.htbar-div{display:none;}
-.svc-grid{grid-template-columns:1fr;}
-.svc-card.featured{grid-column:auto;}
-.values-grid{grid-template-columns:1fr;}
-.about-img-frame img{height:320px;}
-.stats-row{grid-template-columns:1fr;}
-.stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.07);}
-.stat:last-child{border-bottom:none;}
-.row2{grid-template-columns:1fr;}
-.footer-cta-inner{flex-direction:column;align-items:flex-start;}
-.footer-cta-btns{width:100%;flex-direction:column;}
-.footer-cta-btns .btn{width:100%;justify-content:center;}
-.footer-grid{grid-template-columns:1fr;}
-.footer-grid>*:first-child{grid-column:auto;}
-.footer-bottom{flex-direction:column;align-items:flex-start;}
-.proj-grid{columns:2;}
-.areas-grid{grid-template-columns:repeat(3,1fr);}
-.about-badge-wrap{right:0;bottom:-12px;}
-.trust-inner{flex-direction:column;gap:13px;align-items:flex-start;}
-.t-div{display:none;}
-.hero-crown{width:52px;height:52px;top:16px;right:16px;font-size:1.2rem;}
-}
-@media(max-width:480px){
-.proj-grid{columns:1;}
-.areas-grid{grid-template-columns:1fr 1fr;}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha &amp; Omega Pro Services LLC | Everett Painting, Flooring &amp; Repair</title>
+  <meta name="description" content="Alpha &amp; Omega Pro Services LLC is an Everett-based company offering painting, flooring installation, stairs, epoxy, drywall repair, pressure washing and cleaning services.">
+  <meta name="keywords" content="Alpha and Omega Pro Services LLC, Everett WA painting, Everett flooring installation, stairs, epoxy, drywall repair, pressure washing, cleaning services">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alpha &amp; Omega Pro Services LLC | Everett Painting, Flooring &amp; Repair">
+  <meta property="og:description" content="Everett-based painting, flooring installation, stairs, epoxy, drywall repair, pressure washing and cleaning services.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a0a">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Alpha and Omega Pro Services LLC",
+      "slogan": "From start to finish, done right",
+      "areaServed": "Everett, Washington",
+      "serviceType": [
+        "Painting",
+        "Flooring Installation",
+        "Stairs",
+        "Epoxy",
+        "Drywall Repair",
+        "Pressure Washing",
+        "Cleaning Services"
+      ]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@400;600;700;800&amp;family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
-<!-- DEMO TAB -->
-<a href="https://contractorarsenal.com" target="_blank" class="demo-tab">&#9679; LIVE DEMO</a>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-  <img id="lightbox-img" src="" alt=""/>
-</div>
-
-<!-- FLOAT CTA -->
-<div class="float-cta" id="floatCta">
-  <div class="float-bubble"><span class="bubble-dot"></span><span>Ready to upgrade your space?</span></div>
-  <div class="float-btn-wrap">
-    <a href="#contact" class="float-btn">
-      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z"/></svg>
-      Book Now
-    </a>
-    <button class="float-dismiss" onclick="dismissFloat()">&times;</button>
-  </div>
-</div>
-
-<!-- DRAWER -->
-<div class="drawer" id="drawer">
-  <button class="drawer-close" id="drawerClose">&times;</button>
-  <a href="#" onclick="closeDrawer()">Home</a>
-  <a href="#services" onclick="closeDrawer()">Services</a>
-  <a href="#projects" onclick="closeDrawer()">Projects</a>
-  <a href="#about" onclick="closeDrawer()">About</a>
-  <a href="#areas" onclick="closeDrawer()">Focus</a>
-  <a href="#faq" onclick="closeDrawer()">FAQ</a>
-  <a href="#contact" onclick="closeDrawer()" style="color:var(--sky-xlt)">Book Now</a>
-  <div class="drawer-socials">
-    <a href="tel:+14257919975" target="_blank" aria-label="Call Alpha and Omega">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.12.92.35 1.82.68 2.67a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.23-1.23a2 2 0 0 1 2.11-.45c.85.33 1.75.56 2.67.68A2 2 0 0 1 22 16.92z"/></svg>
-    </a>
-    <a href="mailto:alphaomegaproservices@gmail.com" target="_blank" aria-label="Email Alpha and Omega">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
-    </a>
-  </div>
-</div>
-
-<!-- ANNOUNCE -->
-<div class="announce">
-  <p class="announce-desktop">Alpha and Omega Pro Services LLC &nbsp;&#9670;&nbsp; <span>From start to finish, done right</span> &nbsp;&#9670;&nbsp; Remodeling &middot; Painting &middot; Flooring &middot; Stairs &middot; Pressure Washing &nbsp;&#9670;&nbsp; (425) 791-9975</p>
-  <div class="announce-mobile" id="tickerWrap">
-    <span class="tick active">Alpha and Omega Pro Services LLC</span>
-    <span class="tick">&#9670; (425) 791-9975</span>
-    <span class="tick">Remodeling &amp; Painting</span>
-    <span class="tick">Flooring, Stairs &amp; Drywall Repair</span>
-  </div>
-</div>
-
-<!-- NAV -->
-<nav id="mainNav">
-  <div class="nav-inner">
-    <a href="#">
-      <div class="nav-brand">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega Pro Services LLC" class="nav-logo-img"/>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#areas">Focus</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-    <div class="nav-socials">
-      <a href="tel:+14257919975" target="_blank" class="nav-social" aria-label="Call Alpha and Omega"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.12.92.35 1.82.68 2.67a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.23-1.23a2 2 0 0 1 2.11-.45c.85.33 1.75.56 2.67.68A2 2 0 0 1 22 16.92z"/></svg></a>
-      <a href="mailto:alphaomegaproservices@gmail.com" target="_blank" class="nav-social" aria-label="Email Alpha and Omega"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></a>
-    </div>
-    <div class="nav-right">
-      <a href="tel:+14257919975" class="btn btn-sky" style="padding:7px 16px;font-size:.64rem;">(425) 791-9975</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg">
-    <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega Pro Services LLC logo" loading="eager" fetchpriority="high"/>
-  </div>
-  <div class="hero-split"></div>
-  <div class="hero-slash"></div>
-  <div class="hero-grid-fx"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
-  <div class="hero-crown">AO</div>
-  <div class="hero-inner">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-kicker"><div class="hero-kicker-line"></div><span>Remodeling &middot; Painting &middot; Flooring &middot; Stairs &middot; Drywall Repair</span></div>
-        <h1 class="hero-title">
-          <span class="line1">Alpha &amp;</span>
-          <span class="king">OMEGA</span>
-          <span class="roofing">Pro Services.</span>
-        </h1>
-        <p class="hero-sub">From start to finish, done right. Alpha and Omega Pro Services LLC helps homeowners and property managers refresh spaces with remodeling, painting, flooring installation, stairs, pressure washing, drywall repair and epoxy cleaning services.</p>
-        <div class="hero-btns">
-          <a href="#contact" class="btn btn-sky btn-lg">Schedule a Booking</a>
-          <a href="#projects" class="btn btn-outline-w btn-lg">See Our Work</a>
-        </div>
-        <div class="htbar">
-          <div class="htbar-item"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z"/></svg>Remodeling</div>
-          <div class="htbar-div"></div>
-          <div class="htbar-item"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 6 8.3 11.7a2 2 0 0 0 0 2.8l1.2 1.2a2 2 0 0 0 2.8 0L18 10"/></svg>Painting</div>
-          <div class="htbar-div"></div>
-          <div class="htbar-item"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l4-4 4 4v14"/></svg>Flooring &amp; Stairs</div>
-          <div class="htbar-div"></div>
-          <div class="htbar-item"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 16c0-1.1.9-2 2-2h6"/><path d="M3 8c0-1.1.9-2 2-2h10"/></svg>Pressure Washing</div>
-        </div>
-      </div>
-
-      <!-- BOOKING CARD -->
-      <div class="hqcard">
-        <div class="hqcard-head">
-          <h3>Book a Project Estimate</h3>
-          <p>Remodeling &middot; Paint &middot; Floors &middot; Stairs &middot; Drywall &middot; Pressure Washing</p>
-        </div>
-        <div class="hqcard-body">
-          <form onsubmit="handleForm(event,this,'hs1')">
-            <div class="row2">
-              <div class="fg"><label>First Name</label><input type="text" placeholder="Randy" required/></div>
-              <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith" required/></div>
-            </div>
-            <div class="fg"><label>Phone Number</label><input type="tel" placeholder="(425) 000-0000" required/></div>
-            <div class="fg"><label>Email Address</label><input type="email" placeholder="you@email.com" required/></div>
-            <div class="row2">
-              <div class="fg"><label>Preferred Date</label><input type="date" required/></div>
-              <div class="fg"><label>Preferred Time</label><input type="time" required/></div>
-            </div>
-            <div class="fg"><label>Address</label><input type="text" placeholder="123 Main St" required/></div>
-            <div class="fg"><label>Project Type</label>
-              <select required>
-                <option value="" disabled selected>Select a service...</option>
-                <option>Remodeling</option>
-                <option>Painting</option>
-                <option>Flooring Installation</option>
-                <option>Stairs</option>
-                <option>Pressure Washing</option>
-                <option>Drywall Repair</option>
-                <option>Epoxy Cleaning Services</option>
-              </select>
-            </div>
-            <div class="fg"><label>Details</label><textarea placeholder="Tell us about the space, the service you need, and any timing."></textarea></div>
-            <button type="submit" class="btn btn-sky btn-full">Book Now &rarr;</button>
-            <div class="success-msg" id="hs1">Booked! We'll follow up within one business day.</div>
-          </form>
-          <p class="hqcard-note">No spam &middot; Fast confirmation &middot; No obligation</p>
-        </div>
+  <div class="topline">
+    <div class="container topline-inner">
+      <div class="topline-track">
+        <span>Alpha &amp; Omega Pro Services LLC</span>
+        <span class="topline-dot" aria-hidden="true"></span>
+        <span>From Start to Finish, Done Right</span>
+        <span class="topline-dot" aria-hidden="true"></span>
+        <span>Painting &middot; Flooring &middot; Stairs &middot; Epoxy &middot; Drywall Repair &middot; Pressure Washing &middot; Cleaning Services</span>
       </div>
     </div>
   </div>
-</section>
 
-<!-- TRUST STRIP -->
-<div class="trust-strip">
-  <div class="container"><div class="trust-inner">
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z"/></svg></div><span class="t-text">Remodeling</span></div>
-    <div class="t-div"></div>
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 6 8.3 11.7a2 2 0 0 0 0 2.8l1.2 1.2a2 2 0 0 0 2.8 0L18 10"/></svg></div><span class="t-text">Painting</span></div>
-    <div class="t-div"></div>
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l4-4 4 4v14"/></svg></div><span class="t-text">Flooring &amp; Stairs</span></div>
-    <div class="t-div"></div>
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 16c0-1.1.9-2 2-2h6"/><path d="M3 8c0-1.1.9-2 2-2h10"/></svg></div><span class="t-text">Pressure Washing</span></div>
-    <div class="t-div"></div>
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 19h20"/><path d="M7 19v-4.8a2.2 2.2 0 0 1 .64-1.56l3.6-3.6a2.2 2.2 0 0 1 3.12 0l2 2a2.2 2.2 0 0 1 0 3.12L14.48 16"/></svg></div><span class="t-text">Drywall Repair</span></div>
-  </div></div>
-</div>
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand" href="index.html" aria-label="Alpha and Omega Pro Services LLC home">
+        <span class="brand-mark" aria-hidden="true">
+          <img class="brand-logo" src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="">
+        </span>
+        <span class="brand-copy">
+          <span class="brand-wordmark">Alpha &amp; Omega</span>
+          <span class="brand-tag">Pro Services LLC</span>
+        </span>
+      </a>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap" aria-hidden="true">
-  <div class="marquee-track">
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Remodeling</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Painting</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Flooring Installation</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Stairs</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Pressure Washing</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Drywall Repair</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Epoxy Cleaning Services</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Alpha and Omega</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Remodeling</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Painting</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Flooring Installation</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Stairs</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Pressure Washing</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Drywall Repair</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">Epoxy Cleaning Services</span></div>
-    <div class="marquee-item"><span class="mbl">&#9670;</span><span class="marquee-text">From Start to Finish</span></div>
-  </div>
-</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<!-- SERVICES -->
-<section id="services" class="sec sec-off">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl">What We Do</span>
-      <h2 class="sec-title">Every surface. <span class="sk">Every finish.</span></h2>
-      <p class="sec-sub">This keeps the same bold demo structure while centering Alpha and Omega around practical, high-demand service work for interior and exterior upgrades.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card featured">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-tag">Most Popular</div>
-        <div class="svc-content">
-          <div class="svc-num">01</div>
-          <div class="svc-name">Remodeling</div>
-          <div class="svc-desc">Space refreshes, finish upgrades, and practical remodel work positioned as the centerpiece service for the brand.</div>
-          <a href="#contact" class="svc-link">Schedule Estimate &rarr;</a>
-        </div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-tag">Interior</div>
-        <div class="svc-content">
-          <div class="svc-num">02</div>
-          <div class="svc-name">Painting</div>
-          <div class="svc-desc">Interior and exterior painting with clean prep, sharp lines and a finish that immediately lifts the space.</div>
-          <a href="#contact" class="svc-link">Book Paint Quote &rarr;</a>
-        </div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-content">
-          <div class="svc-num">03</div>
-          <div class="svc-name">Flooring Installation</div>
-          <div class="svc-desc">Upgrade rooms with flooring installs that look polished, feel solid underfoot and tie the whole project together.</div>
-          <a href="#contact" class="svc-link">Flooring Quote &rarr;</a>
-        </div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-tag">Finish Work</div>
-        <div class="svc-content">
-          <div class="svc-num">04</div>
-          <div class="svc-name">Stairs</div>
-          <div class="svc-desc">Stair upgrades and finish work that help a home feel cleaner, safer and more complete from top to bottom.</div>
-          <a href="#contact" class="svc-link">Stair Estimate &rarr;</a>
-        </div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-tag">Exterior</div>
-        <div class="svc-content">
-          <div class="svc-num">05</div>
-          <div class="svc-name">Pressure Washing</div>
-          <div class="svc-desc">Refresh walkways, patios, siding and exterior surfaces with pressure washing that improves curb appeal fast.</div>
-          <a href="#contact" class="svc-link">Book Cleaning &rarr;</a>
-        </div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-content">
-          <div class="svc-num">06</div>
-          <div class="svc-name">Drywall Repair</div>
-          <div class="svc-desc">Patch, smooth and prep damaged walls so they are ready for paint, touch-ups or a broader room refresh.</div>
-          <a href="#contact" class="svc-link">Repair Quote &rarr;</a>
-        </div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-img" style="background-image:url('https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f')"></div>
-        <div class="svc-ov"></div>
-        <div class="svc-content">
-          <div class="svc-num">07</div>
-          <div class="svc-name">Epoxy Cleaning Services</div>
-          <div class="svc-desc">Support durable, cleaner-looking surfaces with epoxy-related service work and specialty cleanup support.</div>
-          <a href="#contact" class="svc-link">Epoxy Service &rarr;</a>
-        </div>
+      <div class="header-actions">
+        <a class="btn btn-outline-light" href="contact.html">Request Estimate</a>
+        <a class="btn btn-gold" href="#" data-contact="call">Call Team</a>
+        <button class="nav-toggle nav-only" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <path d="M4 7h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 17h16"></path>
+          </svg>
+        </button>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects" class="sec sec-dark">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl lbl-w">Our Work</span>
-      <h2 class="sec-title sec-title-w">A glimpse of <span class="sk">the craft.</span></h2>
-      <p class="sec-sub" style="color:rgba(255,255,255,.4)">This demo keeps the exact gallery feel so you can later swap these placeholders for real project shots.</p>
+    <div class="mobile-nav" data-mobile-nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" data-contact="call">Call Team</a>
+      <a href="#" data-contact="email">Email Team</a>
     </div>
-    <div class="filter-bar reveal">
-      <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="remodel">Remodeling</button>
-      <button class="filter-btn" data-filter="paint">Painting</button>
-      <button class="filter-btn" data-filter="floor">Flooring</button>
-      <button class="filter-btn" data-filter="repair">Repairs</button>
-      <button class="filter-btn" data-filter="clean">Cleaning</button>
-    </div>
-    <div class="proj-grid" id="projGrid">
-      <div class="proj-tile" data-cat="remodel" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega remodeling project placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Remodeling</div>
-      </div>
-      <div class="proj-tile" data-cat="paint" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega painting project placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Painting</div>
-      </div>
-      <div class="proj-tile" data-cat="floor" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega flooring project placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Flooring Installation</div>
-      </div>
-      <div class="proj-tile" data-cat="repair" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega drywall repair placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Drywall Repair</div>
-      </div>
-      <div class="proj-tile" data-cat="clean" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega cleaning placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Pressure Washing</div>
-      </div>
-      <div class="proj-tile" data-cat="floor" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega stairs placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Stairs</div>
-      </div>
-      <div class="proj-tile" data-cat="remodel" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega remodel placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Interior Refresh</div>
-      </div>
-      <div class="proj-tile" data-cat="paint" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega paint placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Exterior Paint</div>
-      </div>
-      <div class="proj-tile" data-cat="clean" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega epoxy placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Epoxy Cleaning</div>
-      </div>
-      <div class="proj-tile" data-cat="repair" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega touch-up placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Wall Repair</div>
-      </div>
-      <div class="proj-tile" data-cat="floor" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega flooring placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Flooring Install</div>
-      </div>
-      <div class="proj-tile" data-cat="remodel" onclick="openLightbox(this)">
-        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega service placeholder" loading="lazy"/>
-        <div class="proj-tile-ov"></div>
-        <div class="proj-tile-label">Start to Finish</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- ABOUT -->
-<section id="about" class="about-strip">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img-wrap">
-        <div class="about-img-frame">
-          <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega Pro Services LLC logo" loading="lazy"/>
-        </div>
-        <div class="about-badge-wrap">
-          <div class="about-badge"><span>AO</span><small>From Start to Finish</small></div>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="hero-accent"></div>
+      <div class="hero-grid-fx"></div>
+      <div class="hero-crown">
+        <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega Pro Services LLC logo">
       </div>
-      <div>
-        <span class="lbl lbl-w">Who We Are</span>
-        <h2 class="about-title reveal">Alpha to <span class="sk">Omega</span><br>done right.</h2>
-        <p class="about-body reveal">This version keeps the premium storytelling style of the original demo while shifting the message toward a versatile finish-work and improvement company. Remodeling, paint, floors, stairs, washing, drywall and epoxy service all live under one clean brand.</p>
-        <p class="about-body reveal">It is designed to make Alpha and Omega Pro Services LLC look sharp, capable and ready for real traffic, even before we add finished project photography or deeper location pages.</p>
-        <div class="pills reveal">
-          <span class="pill">Remodeling</span>
-          <span class="pill">Painting</span>
-          <span class="pill">Flooring Installation</span>
-          <span class="pill">Stairs</span>
-          <span class="pill">Pressure Washing</span>
-          <span class="pill">Drywall Repair</span>
-          <span class="pill">Epoxy Cleaning</span>
-          <span class="pill">Done Right</span>
-        </div>
-        <div class="stats-row reveal">
-          <div class="stat"><span class="stat-num">7</span><span class="stat-lbl">Core Services</span></div>
-          <div class="stat"><span class="stat-num">AO</span><span class="stat-lbl">Brand-Led Demo</span></div>
-          <div class="stat"><span class="stat-num">425</span><span class="stat-lbl">Live Phone Number</span></div>
-        </div>
-        <a href="#contact" class="btn btn-sky reveal">Schedule a Booking &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="hero-shell">
+        <div class="reveal">
+          <span class="eyebrow">Everett, WA Painting &amp; Finish Company</span>
+          <h1 class="hero-title">Painting, flooring, epoxy <span>&amp; repair in Everett.</span></h1>
+          <p class="hero-copy">Alpha &amp; Omega Pro Services LLC is an Everett-based company handling painting, flooring installation, stairs, epoxy, drywall repair, pressure washing and cleaning services with clean prep, clear communication and finish-focused work from start to finish.</p>
 
-<!-- VALUES -->
-<section class="sec sec-steel">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl lbl-w">Why Choose Us</span>
-      <h2 class="sec-title sec-title-w">The <span class="sk">Alpha</span> standard.</h2>
-    </div>
-    <div class="values-grid">
-      <div class="value-card reveal">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
-        <div class="value-card-title">Versatile Crew</div>
-        <div class="value-card-body">A broad service list helps position the company for full-room refreshes, repair work and finish-driven upgrades.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.08s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77"/></svg></div>
-        <div class="value-card-title">Clean Presentation</div>
-        <div class="value-card-body">The same premium visual system makes the brand feel polished even before full marketing assets are added.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.16s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <div class="value-card-title">Clear Scope</div>
-        <div class="value-card-body">Each section explains exactly what the company does so customers do not have to guess if the service fits.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.24s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
-        <div class="value-card-title">Detail Focused</div>
-        <div class="value-card-body">The messaging leans into clean finishes, practical upgrades and dependable final results instead of generic fluff.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.32s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg></div>
-        <div class="value-card-title">Demo Ready</div>
-        <div class="value-card-body">This version is ready to show immediately while still leaving room for real project photos and local SEO later.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.4s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div class="value-card-title">Flexible Positioning</div>
-        <div class="value-card-body">The same site can speak to homeowners, property managers and light commercial prospects with only minor copy updates.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.48s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <div class="value-card-title">Lead Friendly</div>
-        <div class="value-card-body">Prominent calls to action, a quote form and service-first copy make this usable for traffic right away.</div>
-      </div>
-      <div class="value-card reveal" style="animation-delay:.56s">
-        <div class="value-card-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <div class="value-card-title">Built to Grow</div>
-        <div class="value-card-body">We can layer in testimonials, project galleries and location-specific sections without rebuilding the design system.</div>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="button-row">
+            <a class="btn btn-gold" href="contact.html">Book an Estimate</a>
+            <a class="btn btn-outline-light" href="services.html">See the Service Lineup</a>
+          </div>
 
-<!-- PROCESS -->
-<section class="sec sec-dark">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl lbl-w">Simple 3 Steps</span>
-      <h2 class="sec-title sec-title-w">We handle the project <span class="sk">start to finish.</span></h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-step reveal">
-        <div class="step-circle">01</div>
-        <div class="step-title">Reach Out</div>
-        <div class="step-desc">Tell us what type of work you need, what space is involved and what timing you are working with.</div>
-      </div>
-      <div class="process-step reveal" style="animation-delay:.12s">
-        <div class="step-circle">02</div>
-        <div class="step-title">Review the Scope</div>
-        <div class="step-desc">We clarify the service, the finish, and the next steps so the project feels simple and clear from the start.</div>
-      </div>
-      <div class="process-step reveal" style="animation-delay:.24s">
-        <div class="step-circle">03</div>
-        <div class="step-title">Done Right</div>
-        <div class="step-desc">Move forward with a crew positioned around clean work, practical upgrades and a finished result that feels complete.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SVC LIST -->
-<section class="sec sec-steel">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl lbl-w">Full Service Range</span>
-      <h2 class="sec-title sec-title-w">Every project. <span class="sk">Covered.</span></h2>
-    </div>
-    <div class="svc-list-grid">
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z"/></svg></div><span class="svc-list-name">Remodeling</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 6 8.3 11.7a2 2 0 0 0 0 2.8l1.2 1.2a2 2 0 0 0 2.8 0L18 10"/></svg></div><span class="svc-list-name">Painting</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l4-4 4 4v14"/></svg></div><span class="svc-list-name">Flooring Installation</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-4l4-4v-4l4-4 4 4"/></svg></div><span class="svc-list-name">Stairs</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 16c0-1.1.9-2 2-2h6"/><path d="M5 12c0-1.1.9-2 2-2h8"/><path d="M3 8c0-1.1.9-2 2-2h10"/></svg></div><span class="svc-list-name">Pressure Washing</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 19h20"/><path d="M7 19v-4.8a2.2 2.2 0 0 1 .64-1.56l3.6-3.6a2.2 2.2 0 0 1 3.12 0l2 2a2.2 2.2 0 0 1 0 3.12L14.48 16"/></svg></div><span class="svc-list-name">Drywall Repair</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 7h8"/><path d="M6 12h12"/><path d="M8 17h8"/></svg></div><span class="svc-list-name">Epoxy Cleaning Services</span></div>
-      <div class="svc-list-item"><div class="svc-list-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2"/></svg></div><span class="svc-list-name">Start-to-Finish Project Support</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="sec sec-off">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl">Common Questions</span>
-      <h2 class="sec-title">Got <span class="sk">questions?</span></h2>
-    </div>
-    <div class="faq-wrap">
-      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">What services does Alpha and Omega Pro Services LLC offer?</span><span class="faq-icon">+</span></div><div class="faq-a">This demo highlights remodeling, painting, flooring installation, stairs, pressure washing, drywall repair and epoxy cleaning services.</div></div>
-      <div class="faq-item reveal" style="animation-delay:.08s"><div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">Is this meant to stay a demo or become the real site?</span><span class="faq-icon">+</span></div><div class="faq-a">It is structured like a real landing page so we can keep this exact layout and replace placeholders with final photos, reviews, and live form handling later.</div></div>
-      <div class="faq-item reveal" style="animation-delay:.16s"><div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">Why does the gallery use placeholders right now?</span><span class="faq-icon">+</span></div><div class="faq-a">Because we do not have final project photography yet. The layout is already in place, so swapping in real before-and-after images later will be easy.</div></div>
-      <div class="faq-item reveal" style="animation-delay:.24s"><div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">Can you add service areas and SEO pages next?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Once you want to push beyond the visual demo, the next step is city coverage, page copy, reviews, and search-friendly service content.</div></div>
-      <div class="faq-item reveal" style="animation-delay:.32s"><div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">Can the form send real leads later?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Right now it is front-end only, but we can connect it to email, a CRM, a form handler, or a booking workflow whenever you want.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- AREAS -->
-<section id="areas" class="sec sec-warm">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="lbl">Service Focus</span>
-      <h2 class="sec-title">What this brand can <span class="sk">own.</span></h2>
-      <p class="sec-sub">A clean tag section to communicate the kinds of projects Alpha and Omega can be positioned around.</p>
-    </div>
-    <div class="areas-grid">
-      <div class="area-tag">Interior Refreshes</div>
-      <div class="area-tag">Paint Projects</div>
-      <div class="area-tag">Floor Installs</div>
-      <div class="area-tag">Stair Upgrades</div>
-      <div class="area-tag">Wall Repairs</div>
-      <div class="area-tag">Exterior Washes</div>
-      <div class="area-tag">Rental Turnovers</div>
-      <div class="area-tag">Punch Lists</div>
-      <div class="area-tag">Finish Work</div>
-      <div class="area-tag">Home Updates</div>
-      <div class="area-tag">Property Prep</div>
-      <div class="area-tag">Surface Cleaning</div>
-      <div class="area-tag">Remodel Support</div>
-      <div class="area-tag">Epoxy Service</div>
-      <div class="area-tag">Done Right</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="sec sec-off">
-  <div class="container">
-    <div class="contact-grid">
-      <div>
-        <span class="lbl">Book a Service</span>
-        <h2 class="contact-title reveal">Your project.<br><span class="sk">Our execution.</span><br>Done right.</h2>
-        <p class="contact-body reveal">Tell us what kind of work you need. This keeps the original conversion section almost exactly intact, just rewritten for Alpha and Omega Pro Services LLC.</p>
-        <div class="ci reveal">
-          <div class="ci-row"><div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="ci-lbl">Phone</div><div class="ci-val">1 (425) 791-9975</div></div></div>
-          <div class="ci-row"><div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-lbl">Email</div><div class="ci-val">alphaomegaproservices@gmail.com</div></div></div>
-          <div class="ci-row"><div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l4-4 4 4v14"/></svg></div><div><div class="ci-lbl">Services</div><div class="ci-val">Remodeling, painting, flooring, stairs, drywall repair, pressure washing, epoxy cleaning</div></div></div>
-        </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;" class="reveal">
-          <a href="tel:+14257919975" class="btn btn-sky">(425) 791-9975 &rarr;</a>
-          <a href="mailto:alphaomegaproservices@gmail.com" class="btn btn-outline-sky">Email Us</a>
-        </div>
-      </div>
-      <div class="cform reveal" style="animation-delay:.15s">
-        <div class="cform-head"><h3>Book a Project Estimate</h3><p>Remodeling &middot; Painting &middot; Floors &middot; Stairs &middot; Repair &middot; Cleaning</p></div>
-        <div class="cform-body">
-          <form onsubmit="handleForm(event,this,'cs1')">
-            <div class="row2">
-              <div class="est-fg"><label>First Name</label><input type="text" placeholder="Randy" required/></div>
-              <div class="est-fg"><label>Last Name</label><input type="text" placeholder="Smith" required/></div>
-            </div>
-            <div class="est-fg"><label>Phone Number</label><input type="tel" placeholder="(425) 000-0000" required/></div>
-            <div class="est-fg"><label>Email Address</label><input type="email" placeholder="you@email.com" required/></div>
-            <div class="row2">
-              <div class="est-fg"><label>Preferred Date</label><input type="date" required/></div>
-              <div class="est-fg"><label>Time</label><input type="time" required/></div>
-            </div>
-            <div class="est-fg"><label>Address + Zip</label><input type="text" placeholder="123 Main St" required/></div>
-            <div class="est-fg"><label>Service Needed</label>
-              <select required>
-                <option value="" disabled selected>Select a service...</option>
-                <option>Remodeling</option>
-                <option>Painting</option>
-                <option>Flooring Installation</option>
-                <option>Stairs</option>
-                <option>Pressure Washing</option>
-                <option>Drywall Repair</option>
-                <option>Epoxy Cleaning Services</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="est-fg"><label>Project Details</label><textarea placeholder="Describe the project, the service you need, and any timing or access notes."></textarea></div>
-            <button type="submit" class="btn btn-sky btn-full">Book Now &rarr;</button>
-            <div class="success-msg" id="cs1">Booked! We'll confirm within one business day.</div>
-          </form>
-          <p class="form-note">Demo estimate form &middot; No spam &middot; No obligation</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER CTA -->
-<div class="footer-cta">
-  <div class="container">
-    <div class="footer-cta-inner">
-      <div class="footer-cta-txt"><h4>Ready for a clean, high-converting demo?</h4><p>Alpha and Omega Pro Services LLC &middot; From start to finish, done right &middot; Contact-ready and easy to expand</p></div>
-      <div class="footer-cta-btns">
-        <a href="tel:+14257919975" class="btn btn-sky">(425) 791-9975</a>
-        <a href="#contact" class="btn btn-outline-w">Book Now</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-main">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <img src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega Pro Services LLC" style="height:40px;width:auto;margin-bottom:10px;filter:brightness(0) invert(1);opacity:.7;"/>
-          <div class="footer-brand-sub">Alpha and Omega Pro Services LLC &middot; From Start to Finish</div>
-          <p class="footer-desc">A service-business demo built in the exact spirit of the Seattle example, but rewritten for remodeling, painting, flooring, stairs, drywall repair, pressure washing and epoxy cleaning services.</p>
-          <a href="tel:+14257919975" style="color:var(--sky-xlt);font-size:.82rem;font-weight:700;">1 (425) 791-9975</a>
-          <div class="footer-socials">
-            <a href="tel:+14257919975" target="_blank" class="footer-social" aria-label="Call Alpha and Omega"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.12.92.35 1.82.68 2.67a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.23-1.23a2 2 0 0 1 2.11-.45c.85.33 1.75.56 2.67.68A2 2 0 0 1 22 16.92z"/></svg></a>
-            <a href="mailto:alphaomegaproservices@gmail.com" target="_blank" class="footer-social" aria-label="Email Alpha and Omega"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></a>
+          <div class="hero-service-bar" aria-label="Service highlights">
+            <span class="hero-service-item">Painting</span>
+            <span class="hero-service-item">Flooring Installation</span>
+            <span class="hero-service-item">Stairs</span>
+            <span class="hero-service-item">Epoxy</span>
+            <span class="hero-service-item">Drywall Repair</span>
+            <span class="hero-service-item">Pressure Washing</span>
+            <span class="hero-service-item">Cleaning Services</span>
           </div>
         </div>
-        <div>
-          <div class="footer-col-title">Services</div>
-          <ul class="footer-links">
-            <li><a href="#services">Remodeling</a></li>
-            <li><a href="#services">Painting</a></li>
-            <li><a href="#services">Flooring Installation</a></li>
-            <li><a href="#services">Drywall Repair</a></li>
-            <li><a href="#services">Pressure Washing</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Quick Links</div>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#projects">Our Projects</a></li>
-            <li><a href="#contact">Book an Estimate</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Contact</div>
-          <ul class="footer-links">
-            <li><a href="tel:+14257919975">1 (425) 791-9975</a></li>
-            <li><a href="mailto:alphaomegaproservices@gmail.com">alphaomegaproservices@gmail.com</a></li>
-            <li><a href="#contact">Book Online</a></li>
-          </ul>
+
+        <aside class="hero-card reveal">
+          <div class="hero-card-head">
+            <span class="card-kicker">Protected Contact Access</span>
+            <h2 class="panel-title">Reach the team without putting the details on blast.</h2>
+          </div>
+          <div class="hero-card-body">
+            <p class="panel-copy">The contact actions stay tucked behind buttons now, while the site keeps a stronger, cleaner presentation up front.</p>
+
+            <div class="contact-action-grid">
+              <a class="contact-action" href="#" data-contact="call"><span>Call Our Team</span><span>&rarr;</span></a>
+              <a class="contact-action" href="#" data-contact="email"><span>Email Our Team</span><span>&rarr;</span></a>
+              <a class="contact-action" href="contact.html"><span>Request an Estimate</span><span>&rarr;</span></a>
+            </div>
+
+            <div class="mini-stat-row">
+              <div class="mini-stat">
+                <strong>7</strong>
+                <span>Focused Services</span>
+              </div>
+              <div class="mini-stat">
+                <strong>AO</strong>
+                <span>Brand-Led Look</span>
+              </div>
+              <div class="mini-stat">
+                <strong>3</strong>
+                <span>Core Pages</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item"><span class="trust-dot">P</span><span>Painting</span></div>
+          <div class="trust-item"><span class="trust-dot">F</span><span>Flooring Installation</span></div>
+          <div class="trust-item"><span class="trust-dot">S</span><span>Stairs</span></div>
+          <div class="trust-item"><span class="trust-dot">E</span><span>Epoxy</span></div>
+          <div class="trust-item"><span class="trust-dot">D</span><span>Drywall Repair</span></div>
+          <div class="trust-item"><span class="trust-dot">W</span><span>Pressure Washing</span></div>
+          <div class="trust-item"><span class="trust-dot">C</span><span>Cleaning Services</span></div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="footer-bottom">
-      <span class="footer-copy">&copy; 2026 Alpha and Omega Pro Services LLC &middot; Demo Site</span>
-      <span class="footer-dev">Built as a matching layout concept</span>
+
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item"><span>Painting</span></div>
+        <div class="marquee-item"><span>Flooring Installation</span></div>
+        <div class="marquee-item"><span>Stairs</span></div>
+        <div class="marquee-item"><span>Epoxy</span></div>
+        <div class="marquee-item"><span>Drywall Repair</span></div>
+        <div class="marquee-item"><span>Pressure Washing</span></div>
+        <div class="marquee-item"><span>Cleaning Services</span></div>
+        <div class="marquee-item"><span>Alpha &amp; Omega</span></div>
+        <div class="marquee-item"><span>Painting</span></div>
+        <div class="marquee-item"><span>Flooring Installation</span></div>
+        <div class="marquee-item"><span>Stairs</span></div>
+        <div class="marquee-item"><span>Epoxy</span></div>
+        <div class="marquee-item"><span>Drywall Repair</span></div>
+        <div class="marquee-item"><span>Pressure Washing</span></div>
+        <div class="marquee-item"><span>Cleaning Services</span></div>
+        <div class="marquee-item"><span>From Start to Finish</span></div>
+      </div>
     </div>
-  </div>
-</footer>
 
-<script>
-document.body.classList.add('js-loaded');
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Core Services</span>
+          <h2 class="section-title">Every surface. <span>Every finish.</span></h2>
+          <p class="section-copy">The homepage now pushes the real offer list with a much stronger front-end feel, closer to the original demo's energy and contrast.</p>
+        </div>
 
-(function(){
-  const t=document.querySelectorAll('#tickerWrap .tick');
-  let i=0;
-  setInterval(()=>{t[i].classList.remove('active');i=(i+1)%t.length;t[i].classList.add('active');},2600);
-})();
+        <div class="service-grid">
+          <article class="service-card featured reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/babe8e84-cd6e-4bdb-9ef0-88c47ca78fea');"></div>
+            <div class="service-tag">Most Requested</div>
+            <div class="service-content">
+              <div class="service-number">01</div>
+              <h3 class="service-name">Painting</h3>
+              <p class="service-copy">Interior and exterior painting positioned as the quickest way to transform how a room, facade or full property feels the second someone sees it.</p>
+              <a class="service-link" href="services.html#painting">View Service &rarr;</a>
+            </div>
+          </article>
 
-const burger=document.getElementById('hamburger');
-const drawer=document.getElementById('drawer');
-const drawerClose=document.getElementById('drawerClose');
-burger.addEventListener('click',()=>drawer.classList.add('open'));
-drawerClose.addEventListener('click',()=>drawer.classList.remove('open'));
-function closeDrawer(){drawer.classList.remove('open');}
+          <article class="service-card reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/74d22695-3d51-4750-859d-901b8b25a1b5');"></div>
+            <div class="service-tag">Interior</div>
+            <div class="service-content">
+              <div class="service-number">02</div>
+              <h3 class="service-name">Flooring Installation</h3>
+              <p class="service-copy">Clean installs that sharpen the flow of a space from one room to the next.</p>
+              <a class="service-link" href="services.html#flooring-installation">View Service &rarr;</a>
+            </div>
+          </article>
 
-let floatDismissed=false;
-const floatCta=document.getElementById('floatCta');
-window.addEventListener('scroll',()=>{if(!floatDismissed&&window.scrollY>400)floatCta.classList.add('vis');},{passive:true});
-function dismissFloat(){floatDismissed=true;floatCta.classList.remove('vis');}
+          <article class="service-card reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/12371305-65aa-4ec3-99bb-6e63b83b0d08');"></div>
+            <div class="service-tag">Finish Work</div>
+            <div class="service-content">
+              <div class="service-number">03</div>
+              <h3 class="service-name">Stairs</h3>
+              <p class="service-copy">Detail-driven stair updates that tighten the whole home's look.</p>
+              <a class="service-link" href="services.html#stairs">View Service &rarr;</a>
+            </div>
+          </article>
 
-function openLightbox(tile){
-  const img=tile.querySelector('img');
-  document.getElementById('lightbox-img').src=img.src;
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeLightbox(){
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+          <article class="service-card reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/2c61e7fb-203e-4457-af6e-daa481ec009d');"></div>
+            <div class="service-tag">Durability</div>
+            <div class="service-content">
+              <div class="service-number">04</div>
+              <h3 class="service-name">Epoxy</h3>
+              <p class="service-copy">A tougher, cleaner finish option for surfaces that need more than basic paint or touch-up work.</p>
+              <a class="service-link" href="services.html#epoxy">View Service &rarr;</a>
+            </div>
+          </article>
 
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter=btn.dataset.filter;
-    document.querySelectorAll('.proj-tile').forEach(tile=>{
-      if(filter==='all'||tile.dataset.cat===filter){
-        tile.style.display='block';
-        tile.style.animation='none';
-        requestAnimationFrame(()=>{tile.style.animation='';});
-      } else {
-        tile.style.display='none';
-      }
-    });
-  });
-});
+          <article class="service-card reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/692b355f-28bd-4297-98d6-4db143dc5487');"></div>
+            <div class="service-tag">Prep Work</div>
+            <div class="service-content">
+              <div class="service-number">05</div>
+              <h3 class="service-name">Drywall Repair</h3>
+              <p class="service-copy">Patch and prep work that helps the final finish land cleanly instead of looking patched over.</p>
+              <a class="service-link" href="services.html#drywall-repair">View Service &rarr;</a>
+            </div>
+          </article>
 
-function toggleFAQ(el){
-  const item=el.closest('.faq-item');
-  const isOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-  if(!isOpen)item.classList.add('open');
-}
+          <article class="service-card reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/80de5885-2913-482b-a8e1-26d2f3e2fe37');"></div>
+            <div class="service-tag">Exterior</div>
+            <div class="service-content">
+              <div class="service-number">06</div>
+              <h3 class="service-name">Pressure Washing</h3>
+              <p class="service-copy">Fast curb-appeal improvement for siding, patios, walkways and exterior surfaces.</p>
+              <a class="service-link" href="services.html#pressure-washing">View Service &rarr;</a>
+            </div>
+          </article>
 
-function handleForm(e,form,successId){
-  e.preventDefault();
-  const btn=form.querySelector('button[type=submit]');
-  btn.textContent='Sending...';btn.disabled=true;
-  setTimeout(()=>{
-    form.reset();btn.textContent='Book Now →';btn.disabled=false;
-    document.getElementById(successId).style.display='block';
-    setTimeout(()=>{document.getElementById(successId).style.display='none';},5000);
-  },1200);
-}
+          <article class="service-card reveal">
+            <div class="service-backdrop" style="background-image:url('https://github.com/user-attachments/assets/c118992f-4edd-4271-93d7-28ecd62739db');"></div>
+            <div class="service-tag">Final Pass</div>
+            <div class="service-content">
+              <div class="service-number">07</div>
+              <h3 class="service-name">Cleaning Services</h3>
+              <p class="service-copy">Final cleanup support for homes and properties that need a polished presentation.</p>
+              <a class="service-link" href="services.html#cleaning-services">View Service &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-const revealEls=document.querySelectorAll('.reveal');
-const observer=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target);}});
-},{threshold:0.1});
-revealEls.forEach(el=>observer.observe(el));
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Real Project Photos</span>
+          <h2 class="section-title">Real work. <span>Real texture.</span></h2>
+          <p class="section-copy">For now, the homepage is carrying actual job photos so the site feels grounded in lived-in project work instead of just talking about it.</p>
+        </div>
 
-window.addEventListener('scroll',()=>{
-  document.getElementById('mainNav').style.boxShadow=window.scrollY>20?'0 2px 24px rgba(0,0,0,.5)':'';
-},{passive:true});
-</script>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img src="https://github.com/user-attachments/assets/e096ccae-0e77-42bd-b70f-82076f95256e" alt="Cabinet painting project" loading="lazy">
+            <div class="project-card-body">
+              <span class="project-card-kicker">Interior Refresh</span>
+              <h3 class="project-card-title">Cabinet Painting</h3>
+              <p class="project-card-copy">A tighter, cleaner finish that instantly sharpens how the whole kitchen or interior feels.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="https://github.com/user-attachments/assets/c5f2c7c4-e006-44ec-bb57-b806802b5d63" alt="Flooring in progress jobsite photo" loading="lazy">
+            <div class="project-card-body">
+              <span class="project-card-kicker">Jobsite Snapshot</span>
+              <h3 class="project-card-title">Flooring In Progress</h3>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="https://github.com/user-attachments/assets/8dec2c57-5336-4936-88cc-755d7e125fac" alt="Epoxy table project" loading="lazy">
+            <div class="project-card-body">
+              <span class="project-card-kicker">Custom Finish</span>
+              <h3 class="project-card-title">Epoxy Table</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container story-grid">
+        <div class="reveal">
+          <span class="eyebrow">Why This Hits Better</span>
+          <h2 class="section-title">A sharper site for the <span>exact work you sell.</span></h2>
+          <p class="story-copy">The original demo had more swagger, stronger contrast and a better rhythm. This refresh brings that energy back while cleaning up the messaging and hiding the business contact details behind action buttons instead of splashing them all over the layout.</p>
+          <p class="story-copy">That makes the site feel more premium, more intentional and more focused on the finish-first services that actually matter for Alpha &amp; Omega right now.</p>
+
+          <div class="pill-row">
+            <span class="pill">Painting</span>
+            <span class="pill">Flooring Installation</span>
+            <span class="pill">Stairs</span>
+            <span class="pill">Epoxy</span>
+            <span class="pill">Drywall Repair</span>
+            <span class="pill">Pressure Washing</span>
+            <span class="pill">Cleaning Services</span>
+          </div>
+        </div>
+
+        <aside class="story-card reveal">
+          <div class="story-card-frame">
+            <div class="story-mark">
+              <img class="story-logo" src="https://github.com/user-attachments/assets/bc58a2da-6fb0-435b-b806-9d5896924e4f" alt="Alpha and Omega Pro Services LLC logo">
+            </div>
+            <div class="story-quote">
+              <strong>Brand Direction</strong>
+              <p>Dark, premium, service-first and built to feel like a contractor brand with edge instead of a safe template.</p>
+            </div>
+            <div class="story-stats">
+              <div class="story-stat">
+                <strong>7</strong>
+                <span>Core Services</span>
+              </div>
+              <div class="story-stat">
+                <strong>3</strong>
+                <span>Main Pages</span>
+              </div>
+              <div class="story-stat">
+                <strong>OG</strong>
+                <span>Inspired Energy</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-dark" style="background:#1b1b1b;">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2 class="section-title">The Alpha standard. <span>The Omega finish.</span></h2>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <h3 class="card-title">Focused Offer List</h3>
+            <p class="card-copy">The site no longer wanders into extra services. It stays locked on the seven that matter.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3 class="card-title">Stronger Visual Direction</h3>
+            <p class="card-copy">The layout leans back into the original demo's darker, more aggressive design language.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3 class="card-title">Cleaner Lead Path</h3>
+            <p class="card-copy">Call and email actions are still easy to reach, just no longer exposed as raw text on the page.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3 class="card-title">Built To Grow</h3>
+            <p class="card-copy">The design system can take photos, testimonials and local pages later without losing its identity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Simple 3 Steps</span>
+          <h2 class="section-title">Scope it. Align it. <span>Finish it right.</span></h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <div class="step-badge">01</div>
+            <h3 class="card-title">Choose the service</h3>
+            <p class="card-copy">Pick the finish work that fits the project and tell us what surface or area is involved.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="step-badge">02</div>
+            <h3 class="card-title">Clarify the scope</h3>
+            <p class="card-copy">Use the service and contact pages to make the request cleaner, faster and easier to respond to.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="step-badge">03</div>
+            <h3 class="card-title">Push to the finish</h3>
+            <p class="card-copy">The whole brand now feels more precise and more premium from first click to final CTA.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div class="cta-shell">
+            <div>
+              <h2 class="cta-title">Need an Everett project <span>estimate?</span></h2>
+              <p class="cta-copy">Tell our Everett-based team what service you need, where the project is, and what kind of finish you are after.</p>
+            </div>
+            <div class="button-row">
+              <a class="btn btn-gold" href="contact.html">Request Free Estimate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-shell">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-wordmark">Alpha &amp; Omega</div>
+          <div class="footer-tag">Pro Services LLC</div>
+          <p class="footer-copy">An Everett-based team delivering painting, flooring installation, stairs, epoxy, drywall repair, pressure washing and cleaning services with a stronger contractor presentation.</p>
+        </div>
+
+        <div>
+          <div class="footer-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Services</div>
+          <ul class="footer-links">
+            <li><span>Painting</span></li>
+            <li><span>Flooring Installation</span></li>
+            <li><span>Stairs</span></li>
+            <li><span>Epoxy</span></li>
+            <li><span>Drywall Repair</span></li>
+            <li><span>Pressure Washing</span></li>
+            <li><span>Cleaning Services</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Contact</div>
+          <div class="footer-action-row">
+            <a class="btn btn-gold" href="#" data-contact="call">Call Our Team</a>
+            <a class="btn btn-outline-light" href="#" data-contact="email">Email Our Team</a>
+            <a class="btn btn-outline-light" href="contact.html">Request Estimate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Alpha &amp; Omega Pro Services LLC</span>
+        <span>From start to finish, done right.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
 </body>
 </html>
