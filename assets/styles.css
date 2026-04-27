@@ -1506,6 +1506,11 @@ button {
   display: block;
 }
 
+.form-error {
+  background: rgba(220, 60, 60, 0.1);
+  color: #c0392b;
+}
+
 .faq-card {
   background: var(--white);
   border: 1.5px solid var(--mid);
@@ -1727,7 +1732,7 @@ button {
 
   .mobile-nav {
     position: fixed;
-    inset: 118px 20px auto;
+    inset: 100px 20px auto;
     z-index: 18;
     display: grid;
     gap: 10px;
