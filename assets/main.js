@@ -58,7 +58,7 @@ const emailHref = [
   "aome",
   "gapr",
   "oserv",
-  "ices",
+  "ice",
   "@",
   "gma",
   "il",
